@@ -1,6 +1,8 @@
 # MultiOptionsPolyline
 Leaflet MultiOptionsPolyline Example
 
+[Full Demo](http://hgoebl.github.io/Leaflet.MultiOptionsPolyline/demo/)
+
 # Speed
 Here you have a ride by car of a guy who seems to drive too fast sometimes (a personally don't know him/her).
 Speed is color-coded from shades of blue (<= 40 km/h), shades of green (> 40 km/h until 55 km/h) and above it's getting yellow, orange and red.

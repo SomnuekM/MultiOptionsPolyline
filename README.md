@@ -1,7 +1,7 @@
 # MultiOptionsPolyline
 Leaflet MultiOptionsPolyline Example
 
-[Full Demo](http://hgoebl.github.io/Leaflet.MultiOptionsPolyline/demo/)
+[Full Demo](https://somnuekm.github.io/MultiOptionsPolyline/fullDemo.html)
 
 # Speed
 Here you have a ride by car of a guy who seems to drive too fast sometimes (a personally don't know him/her).

@@ -106,11 +106,11 @@
             <div class='small pad2y keyline-bottom'>
                 <div class='fill-cyan dark space-top1_5 fl pad0 center dot'> <span class='icon car' /></div>
                 <div class='strong space-left4'>Driving directions</div>
-                <div class='quiet space-left4'>
-                    Timestart : 2021-09-13 05:00
+                <div class='quiet space-left4' id="TimeStart">
+                    TimeStart : 2021-09-13 05:00
                 </div>
-                <div class='quiet space-left4'>
-                    Timeend : 2021-09-13 07:30
+                <div class='quiet space-left4' id="TimeEnd">
+                    TimeEnd : 2021-09-13 07:30
                 </div>
 
             </div>
@@ -152,6 +152,29 @@
                 constructor: Demo,
 
                 trackPointFactory: function(data) {
+                    
+                          let firstData = data[0];
+                    let lastData = data[data.length - 1];
+
+                    var firstdate = new Date(firstData.meta.time);
+                    var TimeStart = "TimeStart : " + ("0" + firstdate.getDate()).slice(-2) +
+                        "/" + ("0" + (firstdate.getMonth() + 1)).slice(-2) +
+                        "/" + firstdate.getFullYear() +
+                        " " + ("0" + firstdate.getHours()).slice(-2) +
+                        ":" + ("0" + firstdate.getMinutes()).slice(-2);
+                    document.getElementById('TimeStart').innerHTML = TimeStart
+
+
+
+
+                    var lastdate = new Date(lastData.meta.time);
+                    var TimeEnd = "TimeEnd : " + ("0" + lastdate.getDate()).slice(-2) +
+                        "/" + ("0" + (lastdate.getMonth() + 1)).slice(-2) +
+                        "/" + lastdate.getFullYear() +
+                        " " + ("0" + lastdate.getHours()).slice(-2) +
+                        ":" + ("0" + lastdate.getMinutes()).slice(-2)
+                    document.getElementById('TimeEnd').innerHTML = TimeEnd
+                    
                     return data.map(function(item) {
                         var trkpt = L.latLng(item.lat, item.lng, item.alt);
                         trkpt.meta = item.meta;

@@ -1,12 +1,3 @@
-/* -------------------------------------------------------
-This file is Copyright (C) 2015 Mapbox Inc.  All rights reserved.
-You may not duplicate, copy, or reuse any portion without express written
-permission from Mapbox.
-------------------------------------------------------- */
-
-
-/* Reset â™¥ Adapted from http://meyerweb.com/eric/tools/css/reset/
-------------------------------------------------------- */
 
 html,
 body,
@@ -98,7 +89,6 @@ video {
 }
 
 
-/* HTML5 display-role reset for older browsers */
 
 article,
 aside,
@@ -137,7 +127,6 @@ q:after {
 }
 
 
-/* tables still need 'cellspacing="0"' in the markup */
 
 table {
     border-collapse: collapse;
@@ -145,7 +134,6 @@ table {
 }
 
 
-/* remember to define focus styles. Hee Haw */
 
 :focus {
     outline: 0;
@@ -160,7 +148,6 @@ table {
 }
 
 
-/* Special button reset */
 
 [type=submit],
 button,
@@ -171,13 +158,10 @@ button::-moz-focus-inner {
 }
 
 
-/* @FontFace
-------------------------------------------------------- */
+
 
 @import url('https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap');
 
-/* Inline Elements: Defaults
-------------------------------------------------------- */
 
 body,
 input,
@@ -290,8 +274,6 @@ em {
     font-family: 'K2D', sans-serif;
 }
 
-
-/* Fancy font style */
 
 h1.fancy,
 h2.fancy,
@@ -415,8 +397,6 @@ a.quiet.dark:hover {
 }
 
 
-/* Buttons */
-
 .button {
     background-color: #3887be;
     text-align: center;
@@ -430,12 +410,11 @@ a.quiet.dark:hover {
     border-radius: 3px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /* Protects button metrics in .prose context */
+
     font-family: 'K2D', sans-serif;
     line-height: 20px;
     font-size: 12px;
     -webkit-appearance: none;
-    /* The button element needs to be forced this */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -540,7 +519,6 @@ a.quiet.dark:hover {
 }
 
 
-/* Buttons with fill classes applied */
 
 .button.fill-pink.active,
 .button.fill-pink:hover {
@@ -697,9 +675,6 @@ a.quiet.dark:hover {
 }
 
 
-/* Tab style for links that toggle between views
- * NOTE: THE .tabs class in DEPRECATED - for a similar UI component use rounded-toggle ;
- */
 
 .tabs {
     display: inline-block;
@@ -771,9 +746,6 @@ a.quiet.dark:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-
-/* Pill wrapper for joining buttons. */
-
 .pill {
     display: inline-block;
 }
@@ -813,9 +785,6 @@ a.quiet.dark:hover {
 .pill .button.stroke:not(:first-of-type) {
     margin-left: -2px;
 }
-
-
-/* Vertical pill if pill contents is full width */
 
 .pill>.col12 {
     text-align: left;
@@ -858,8 +827,6 @@ a.quiet.dark:hover {
     border-color: #f8f8f8;
 }
 
-
-/* deprecated, use fill-cyan */
 
 .fill-blue-light .pill>* {
     border-color: #52a1d8;
@@ -962,9 +929,6 @@ a.quiet.dark:hover {
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-
-/* Pill style for input followed by button */
-
 .input-pill input[type='text'],
 .input-pill input[type=text]:focus {
     border-right-width: 0;
@@ -974,9 +938,6 @@ a.quiet.dark:hover {
     border-left-width: 0;
     border-radius: 0 3px 3px 0;
 }
-
-
-/* make your pills toggles */
 
 .toggle * {
     width: 40px;
@@ -996,9 +957,6 @@ a.quiet.dark:hover {
     width: auto;
     color: #cdecf3;
 }
-
-
-/* Rounded toggle for filtering/modifying lists */
 
 .rounded-toggle {
     margin-top: 5px;
@@ -1084,9 +1042,6 @@ a.quiet.dark:hover {
 .fill-light .rounded-toggle .active {
     background: #f8f8f8;
 }
-
-
-/* deprecated, use fill-cyan */
 
 .fill-blue-light .rounded-toggle input[type=radio]:checked+label,
 .fill-blue-light .rounded-toggle .active {
@@ -1190,10 +1145,6 @@ img.center {
     margin-right: auto;
 }
 
-
-/* images defined with background size -
-placed here so width will be overriden by grid widths*/
-
 .thumbnail {
     height: 30px;
     width: 30px;
@@ -1226,9 +1177,6 @@ hr {
     background: rgba(255, 255, 255, .05);
 }
 
-
-/* Block Quotes */
-
 blockquote,
 q {
     quotes: none;
@@ -1244,8 +1192,6 @@ q:after {
     content: '';
 }
 
-
-/* Keyboard styles */
 
 kbd {
     background: rgba(0, 0, 0, .025);
@@ -1265,8 +1211,6 @@ kbd {
     border-color: rgba(255, 255, 255, .1);
 }
 
-
-/* Code Blocks & Pre */
 
 .code,
 code,
@@ -1337,9 +1281,6 @@ pre code {
     overflow-y: scroll;
 }
 
-
-/* sub/superscripts */
-
 sup,
 sub {
     height: 0;
@@ -1357,10 +1298,6 @@ sup {
 sub {
     top: .5ex;
 }
-
-
-/* Form basics
--------------------------------------------------- */
 
 form fieldset {
     margin: 0 0 20px;
@@ -1539,7 +1476,6 @@ input[type=number].clean:focus {
 }
 
 
-/* Special Form Components */
 
 .with-icon {
     position: relative;
@@ -1644,8 +1580,6 @@ input[type=range]::-ms-fill-lower {
 }
 
 
-/* Browser thingies */
-
 input[type=range]::-moz-range-track {
     opacity: 0;
 }
@@ -1658,9 +1592,6 @@ input[type=range]::-ms-tooltip {
     display: none;
 }
 
-
-/* For whatever reason, these need to be defined
- * on their own so dont group them */
 
 input[type=range]::-webkit-slider-thumb {
     background: rgba(255, 255, 255, 0.75);
@@ -1712,10 +1643,6 @@ input[type=range]:disabled {
 }
 
 
-/* Checkboxes
-** DEPRECATED - use checkbox-pill instead
--------------------------------------------------- */
-
 .checkbox input[type=checkbox] {
     display: none;
 }
@@ -1758,9 +1685,6 @@ input[type=range]:disabled {
 }
 
 
-/* Checkbox pill - use in conjunction with pill + button
--------------------------------------------------- */
-
 .checkbox-pill input[type=checkbox] {
     display: none;
 }
@@ -1791,10 +1715,6 @@ input[type=range]:disabled {
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-
-/* Radio pill - use in conjunction with pill + button
--------------------------------------------------- */
-
 .radio-pill input[type=radio] {
     display: none;
 }
@@ -1823,10 +1743,6 @@ input[type=range]:disabled {
 .dark .radio-pill input[type=radio]:checked+.button.quiet {
     background-color: rgba(255, 255, 255, 0.25);
 }
-
-
-/* Tables
--------------------------------------------------- */
 
 table {
     width: 100%;
@@ -1893,10 +1809,6 @@ table.fixed {
 .dark .scroll-styled::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255, 0.1);
 }
-
-
-/* Inline Elements: Formatted for read content
-------------------------------------------------------- */
 
 .prose {
     line-height: 25px;
@@ -2014,9 +1926,6 @@ table.prose th,
     margin-bottom: 10px;
 }
 
-
-/* Dark read content styling */
-
 .dark .prose h1,
 .dark .prose h2,
 .dark .prose h3 {
@@ -2058,11 +1967,6 @@ h6.micro {
     margin-bottom: 0;
 }
 
-
-/* Larger default font sizes for read content. This
- * class should be used in conjunction with .prose
-------------------------------------------------------- */
-
 .prose-big,
 .prose-big h3,
 .prose-big h4,
@@ -2077,10 +1981,6 @@ h6.micro {
     font-size: 15px;
     line-height: 25px;
 }
-
-
-/* Inline Elements: Anchor link styling
-------------------------------------------------------- */
 
 h1 a[href^='#'],
 h2 a[href^='#'],
@@ -2099,9 +1999,6 @@ h2 .dark>a[href^='#'] {
     color: white;
 }
 
-
-/* Icons
-------------------------------------------------------- */
 
 @font-face {
     font-family: 'icon';
@@ -2123,13 +2020,11 @@ h2 .dark>a[href^='#'] {
     vertical-align: top;
     -webkit-background-size: 4320px 60px;
     background-size: 4320px 60px;
-    /* speak: none; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -2161,11 +2056,6 @@ h2 .dark>a[href^='#'] {
 }
 
 
-/*
-:not(input) exists on this rule to allow inputs with a value to take a width, because
-otherwise these are considered empty
-*/
-
 .button.icon:empty:not(input) {
     width: 40px;
     padding: 10px;
@@ -2183,15 +2073,6 @@ otherwise these are considered empty
     padding-bottom: 0;
 }
 
-
-/* Generated with icomoon.com
-Note: :after rules and alternative names need to be added manually.
-Alternate exists for:
-.close -> .x
-*/
-
-
-/* before */
 
 .icon.account:before {
     content: "\e900";
@@ -4977,28 +4858,14 @@ Alternate exists for:
 }
 
 
-/* Pygments Syntax Highlighting
-------------------------------------------------------- */
-
 pre .hll {
     background-color: #ffffcc
 }
 
 
-/* No Styling, Just Default:
-
-  pre .nx, Normal Text
-  pre .ni  Name.Entity
-  pre .nf Name.Entity
-  pre .no Name.Constant
-*/
-
-
-/* Comments */
 
 pre .o,
 
-/* Operator */
 
 pre .c,
 pre .c1,
@@ -5014,15 +4881,10 @@ pre .err {
 }
 
 
-/* Error */
-
 pre .k {
     color: #404040;
     font-weight: bold;
 }
-
-
-/* Keyword */
 
 pre .css .k {
     font-weight: normal;
@@ -5034,89 +4896,58 @@ pre .cs {
 }
 
 
-/* Comment.Special */
-
 pre .gd {
     color: #A00000;
 }
 
 
-/* Generic.Deleted */
 
 pre .ge {
     font-style: italic
 }
-
-
-/* Generic.Emph */
 
 pre .gs {
     font-weight: bold;
 }
 
 
-/* Generic.Strong */
-
 pre .gr {
     color: #FF0000;
 }
 
 
-/* Generic.Error */
-
 pre .gh {
     color: #000080;
 }
-
-
-/* Generic.Heading */
 
 pre .gi {
     color: #00A000;
 }
 
 
-/* Generic.Inserted */
-
 pre .go {
     color: #808080;
 }
 
 
-/* Generic.Output */
-
 pre .gp {
     color: #c65d09;
 }
-
-
-/* Generic.Prompt */
 
 pre .gu {
     color: #800080;
 }
 
 
-/* Generic.Subheading */
 
 pre .gt {
     color: #0040D0;
 }
 
-
-/* Generic.Traceback */
-
 pre .kc {
     color: #D24400;
 }
 
-
-/* Keyword.Constant */
-
-
-/* Keyword.Declaration
- * Keyword.Namespace
- * Keyword.Reserved */
 
 pre .kd,
 pre .kn,
@@ -5126,10 +4957,6 @@ pre .nt {
 }
 
 
-/* Name.Tag */
-
-
-/* Literal.Number */
 
 pre .mh,
 pre .mo,
@@ -5139,32 +4966,23 @@ pre .kt,
 pre .mf,
 pre .nl,
 
-/* Name.Label */
 
 pre .na,
 
-/* Name.Attribute */
 
 pre .m {
     color: #0C9DC2;
 }
-
-
-/* Keyword.Type */
 
 pre .kp {
     color: #0080f0;
 }
 
 
-/* Keyword.Pseudo */
-
 pre .nc {
     color: #DF6637;
 }
 
-
-/* Name.Class */
 
 pre .css .nc {
     color: #75A21C;
@@ -5175,71 +4993,44 @@ pre .nd {
 }
 
 
-/* Name.Decorator */
-
 pre .ne {
     color: #F00000;
 }
-
-
-/* Name.Exception */
 
 pre .nn {
     color: #0e84b5;
 }
 
-
-/* Name.Namespace */
-
 pre .nf,
-
-/* Name.Function */
 
 pre .nv {
     color: #003060;
 }
 
 
-/* Name.Variable */
-
 pre .ow {
     color: #404040;
 }
 
-
-/* Operator.Word */
-
 pre .w {
     color: #bbbbbb;
 }
-
-
-/* Text.Whitespace */
 
 pre .sc {
     color: #8080F0;
 }
 
 
-/* Literal.String.Char */
-
 pre .sd {
     color: #D04020;
 }
 
-
-/* Literal.String.Doc */
-
-
-/* Name.Builtin / Name.Builtin.Pseudo */
 
 pre .bp,
 pre .nb {
     color: #007020;
 }
 
-
-/* Literal.String */
 
 pre .s,
 pre .sh,
@@ -5254,47 +5045,30 @@ pre .si {
     background-color: #eee;
 }
 
-
-/* Literal.String.Interpol */
-
 pre .p {
     color: #444444;
 }
 
 
-/* Normal Text */
-
 pre .ss {
     color: #f0c080;
 }
-
-
-/* Literal.String.Symbol */
 
 pre .vc {
     color: #c0c0f0;
 }
 
 
-/* Name.Variable.Class */
-
 pre .vg {
     color: #f08040;
 }
 
-
-/* Name.Variable.Global */
 
 pre .vi {
     color: #a0a0f0;
 }
 
 
-/* Name.Variable.Instance */
-
-
-/* CSS Animations/Transitions
--------------------------------------------------- */
 
 .animate {
     -webkit-transition: all .125s;
@@ -5350,9 +5124,6 @@ pre .vi {
     -ms-transform: translateX(0);
     transform: translateX(0);
 }
-
-
-/* Sliding panes */
 
 .sliding {
     position: relative;
@@ -5459,10 +5230,6 @@ pre .vi {
 }
 
 
-/* Markup free clearing
-Details: http://www.positioniseverything.net/easyclearing.html
-------------------------------------------------------- */
-
 .clearfix {
     display: block;
 }
@@ -5474,10 +5241,6 @@ Details: http://www.positioniseverything.net/easyclearing.html
     clear: both;
     visibility: hidden;
 }
-
-
-/* Additional Utility Classes
-------------------------------------------------------- */
 
 .fr {
     float: right;
@@ -5672,10 +5435,6 @@ img.inline,
     overflow: hidden;
 }
 
-
-/* Loading overlay
-------------------------------------------------------- */
-
 .loading:after,
 .loading:before {
     content: '';
@@ -5759,11 +5518,6 @@ img.inline,
         transform: rotate(360deg);
     }
 }
-
-
-/* Small Screen Layout
-------------------------------------------------------- */
-
 @media only screen and (max-width:900px) {
     .limiter {
         width: 100%;
@@ -5773,9 +5527,6 @@ img.inline,
 }
 
 
-/* Tablet Layout
-------------------------------------------------------- */
-
 @media only screen and (max-width:770px) {
     .hide-tablet {
         display: none;
@@ -5784,10 +5535,6 @@ img.inline,
         display: block;
     }
 }
-
-
-/* Mobile Layout
-------------------------------------------------------- */
 
 @media only screen and (max-width:640px) {
     a:link {
@@ -6061,7 +5808,6 @@ img.inline,
     .mobile-cols>.margin12 {
         margin-left: 100.0000%;
     }
-    /* Fanct gets too big, revert to defaults */
     h1.fancy {
         font-size: 40px;
         line-height: 60px;
@@ -6087,15 +5833,12 @@ img.inline,
         font-size: 20px;
         line-height: 30px;
     }
-    /* Anchor icon adds noise to the page on smaller displays */
     .doc h1[id]:before,
     .doc h2[id]:before,
     .doc h3[id]:before,
     .doc h4[id]:before {
         visibility: hidden;
     }
-    /* Lower the size back down to standard
-   * .prose units on mobile */
     .prose-big,
     .prose-big h3,
     .prose-big h4,
@@ -6112,8 +5855,6 @@ img.inline,
 }
 
 
-/* Print
-------------------------------------------------------- */
 
 @media print {
     /* Inline rules */
@@ -6127,7 +5868,6 @@ img.inline,
     .prose a:after {
         content: ' [' attr(href) '] ';
     }
-    /* Cut pad rules in half, matches mobile rules */
     .pad4 {
         padding: 20px;
     }
@@ -6153,13 +5893,11 @@ img.inline,
         padding-right: 10px;
         padding-left: 10px;
     }
-    /* Icon sprites dont show up be default so kill'em */
     .rcon:after,
     .icon:before {
         width: 0;
         height: 0;
     }
-    /* TODO Depreciate */
     .noprint {
         display: none;
     }
